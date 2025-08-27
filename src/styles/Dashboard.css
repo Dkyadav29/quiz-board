@@ -1,0 +1,116 @@
+/* Dashboard.css */
+
+/* Main dashboard container */
+.dashboard-container {
+    padding: 2rem;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header section */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* User info card */
+.user-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+    transition: transform 0.2s ease;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+}
+
+.user-card h2 {
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.user-card p {
+    color: #666;
+}
+
+/* Quiz selection */
+.quiz-selection {
+    margin-bottom: 2rem;
+}
+
+.quiz-selection label {
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.quiz-selection select {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Table for past performance */
+.performance-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.performance-table th,
+.performance-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.performance-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    color: #333;
+}
+
+.performance-table tr:hover {
+    background-color: #fafafa;
+}
+
+/* Buttons */
+.dashboard-button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #4f46e5;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-right: 1rem;
+}
+
+.dashboard-button:hover {
+    background-color: #4338ca;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .quiz-selection {
+        margin-bottom: 1rem;
+    }
+}
